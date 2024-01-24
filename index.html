@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/movie.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>PraticaProjeto</title>
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg bg-primary bg-dark">
+      <div class="container-fluid">
+        <img src="./imagens/pngegg.png" alt="" class="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">RECOMENDAÇÕES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">LANÇAMENTOS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                FILMES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ação</a></li>
+                <li><a class="dropdown-item" href="#">Comédia</a></li>
+                <li><a class="dropdown-item" href="#">Terror</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <section class="box-destaque bg-dark">
+        <div class="descrição-filme">
+        <h1 class="titulo">HOMEM-ARANHA: ATRAVÉS DO ARANHAVERSO</h1><br>
+        <h4 class="genero">Ação Aventura Animação Família</h4><br>
+        <p>Homem-Aranha: Através do Aranhaverso, é a continuação do vencedor do Oscar Homem-Aranha: No Aranhaverso, de 2018,
+            que acompanha Miles Morales (Shameik Moore), o simpático Homem-Aranha do Brooklyn. Neste novo capítulo, Miles está de volta para uma nova missão
+            em sua agitada vida como super herói. No novo filme, Morales é transportado para uma aventura épica através do multiverso, e deve unir forças
+            com a mulher-aranha Gwen Stacy (Hailee Steinfeld) e um novo time de Pessoas-Aranha, formado por heróis de diversas dimensões.</p><br>
+        <h4 class="audio-legenda">PT EN ES</h4><br>
+        <div><a href="https://www.adorocinema.com/filmes/filme-269975/"><button class="saiba-mais">+Saiba Mais</button></a></div>
+      </div>
+      <div class="trailer">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_4is7I_ZxTg" title="Homem-Aranha: Através do #AranhaVerso | Trailer 2 Dublado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="box-recomendados">
+        <div class="box-filmes">
+            <div class="filme1"><img class="filmes-grade" src="imagens/filme1.jpg" alt=""></div>
+            <div class="filme2"><img class="filmes-grade" src="imagens/filme2.jpg" alt=""></div>
+            <div class="filme3"><img class="filmes-grade" src="imagens/filme3.jpg" alt=""></div>
+            <div class="filme4"><img class="filmes-grade" src="imagens/filme4.jpg" alt=""></div>
+            <div class="filme5"><img class="filmes-grade" src="imagens/filme5.jpg" alt=""></div>
+            <div class="filme6"><img class="filmes-grade" src="imagens/filme6.jpg" alt=""></div>
+        </div>
+    </section>
+    <section class="box-popular">
+    <div class="texto_destaque"><h2>LANÇAMENTOS</h2></div>
+    <main id="main"></main>
+  </section>
+    <section class="contato">
+            <form class="forms" method="">
+                <div class="titulo-form">
+                    <h1>CONTATO</h1>
+                    <p>
+                      Nos envie uma sugestão, dúvida, elogios ou críticas através do
+                      formulário abaixo
+                    </p>
+                  </div>
+                <div>
+                  <label for="name">Nome:</label>
+                  <input type="text" id="name" />
+                </div>
+                <div>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" />
+                </div>
+                <div>
+                  <label for="msg">Mensagem:</label>
+                  <textarea id="msg"></textarea>
+                </div>
+                <div class="button">
+                  <button type="submit">Enviar sua mensagem</button>
+                </div>
+              </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scripts/fetchHighlightMovie.js" type="module"></script>
+    <script src="./scripts/fetchPopularMovie.js" type="module"></script>
+    <footer class="rodape"><p>Desenvolvido by Luiz Gustavo</p></footer>
+</body>
+</html>
